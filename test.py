@@ -11,9 +11,13 @@ Must contain at least one symbol from: ~`!@#$%^&*()_+-= (copy and paste to avoid
 class TestCase(unittest.TestCase):
 
     def test1(self):
-        pass
         input = "Passwor"
         expected = False
+        self.assertEqual(check_pwd(input), expected)
+
+    def test2(self):
+        input = "Password"
+        expected = True
         self.assertEqual(check_pwd(input), expected)
     
 if __name__ == '__main__':
