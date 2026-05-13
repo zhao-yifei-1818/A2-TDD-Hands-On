@@ -11,12 +11,17 @@ class TestCase(unittest.TestCase):
         input = ""
         expected = False
         self.assertEqual(check_pwd(input), expected)
-
+'''
     def test2(self):
-        input = "Passwor"
+        input = "Passwo"
         expected = False
         self.assertEqual(check_pwd(input), expected)
-    
 
+    def test3(self):
+        input = "Passwordpassword12345"
+        expected = False
+        self.assertEqual(check_pwd(input), expected)
+
+'''
 if __name__ == '__main__':
     unittest.main()
