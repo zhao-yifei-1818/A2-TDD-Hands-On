@@ -9,22 +9,27 @@ Must contain at least one uppercase letter (standard English alphabet)
 Must contain at least one digit
 Must contain at least one symbol from: ~`!@#$%^&*()_+-= (copy and paste to avoid missing characters) These are the only symbols that will meet this requirement. Other symbols may be present, but they won't satisfy this requirement.'''
 class TestCase(unittest.TestCase):
-    pass
-    ''' 
+
     def test1(self):
         pass
         input = "Password123!"
         expected = True
         self.assertEqual(check_pwd(input), expected)
+
     def test2(self):
-        input = "Password"
+        input = "Password1234567890!123123"
+        expected = False
+        self.assertEqual(check_pwd(input), expected)
+
+    def test3(self):
+        input = "PASSWORD"
+        expected = False
+        self.assertEqual(check_pwd(input), expected)
+
+    def test4(self):
+        input = "password"
         expected = False
         self.assertEqual(check_pwd(input), expected)
     
-    def test3(self):
-        input = "Password1234567890!"
-        expected = True
-        self.assertEqual(check_pwd(input), expected)
-'''
 if __name__ == '__main__':
     unittest.main()
