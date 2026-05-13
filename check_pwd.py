@@ -1,7 +1,4 @@
 def check_pwd(pwd):
-    if len(pwd) <= 8 or len(pwd) >= 20:
+    if len(pwd) <= 8 :
         return False
-    if not any(c.islower() for c in pwd):
-        return False
-    else:
         return True

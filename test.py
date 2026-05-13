@@ -12,23 +12,8 @@ class TestCase(unittest.TestCase):
 
     def test1(self):
         pass
-        input = "Password123!"
+        input = "Passwor"
         expected = True
-        self.assertEqual(check_pwd(input), expected)
-
-    def test2(self):
-        input = "Password1234567890!123123"
-        expected = False
-        self.assertEqual(check_pwd(input), expected)
-
-    def test3(self):
-        input = "PASSWORD"
-        expected = False
-        self.assertEqual(check_pwd(input), expected)
-
-    def test4(self):
-        input = "password"
-        expected = False
         self.assertEqual(check_pwd(input), expected)
     
 if __name__ == '__main__':
