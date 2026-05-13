@@ -1,2 +1,4 @@
+'''TDD flow practice'''
 def check_pwd(pwd):
-    return true
+    if len(pwd) == 0:
+        return False
