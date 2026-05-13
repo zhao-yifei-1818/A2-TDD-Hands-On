@@ -13,7 +13,7 @@ class TestCase(unittest.TestCase):
     def test1(self):
         pass
         input = "Passwor"
-        expected = True
+        expected = False
         self.assertEqual(check_pwd(input), expected)
     
 if __name__ == '__main__':
