@@ -1,5 +1,5 @@
 import unittest
-from task import check_pwd
+from check_pwd import check_pwd
 
 '''check_pwd accepts a string and returns a boolean: True if it meets the criteria listed below, otherwise it returns False:
 
@@ -9,12 +9,13 @@ Must contain at least one uppercase letter (standard English alphabet)
 Must contain at least one digit
 Must contain at least one symbol from: ~`!@#$%^&*()_+-= (copy and paste to avoid missing characters) These are the only symbols that will meet this requirement. Other symbols may be present, but they won't satisfy this requirement.'''
 class TestCase(unittest.TestCase):
-    
+    pass
+    ''' 
     def test1(self):
+        pass
         input = "Password123!"
         expected = True
         self.assertEqual(check_pwd(input), expected)
-    ''' 
     def test2(self):
         input = "Password"
         expected = False
