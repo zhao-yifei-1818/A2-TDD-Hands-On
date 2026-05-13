@@ -16,12 +16,12 @@ class TestCase(unittest.TestCase):
         input = "Passwor"
         expected = False
         self.assertEqual(check_pwd(input), expected)
-'''
+
     def test3(self):
         input = "Passwordpassword12345"
         expected = False
         self.assertEqual(check_pwd(input), expected)
 
-'''
+
 if __name__ == '__main__':
     unittest.main()
