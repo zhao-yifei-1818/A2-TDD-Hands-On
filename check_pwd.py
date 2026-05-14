@@ -8,4 +8,7 @@ def check_pwd(pwd):
         return False
     if not any(c.isnumeric() for c in pwd):
         return False
+    special_chars = "~`!@#$%^&*()_+-="
+    if not any(c in special_chars for c in pwd):
+        return False
     return True
