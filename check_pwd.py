@@ -6,4 +6,6 @@ def check_pwd(pwd):
         return False
     if not any(c.isupper() for c in pwd):
         return False
+    if not any(c.isnumeric() for c in pwd):
+        return False
     return True
