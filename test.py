@@ -31,6 +31,11 @@ class TestCase(unittest.TestCase):
         input = "passwordpassword1234"
         expected = False
         self.assertEqual(check_pwd(input), expected)
+    
+    def test6(self):
+        input = "Passwordpassword"
+        expected = False
+        self.assertEqual(check_pwd(input), expected)
 
 if __name__ == '__main__':
     unittest.main()
